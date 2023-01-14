@@ -1,0 +1,60 @@
+/* descendant selector (space) */
+/* div p{
+    color:red;
+} */
+/* select ul and li tag */
+/* ul li{
+    background-color: lightgreen;
+} */
+/* you can also combine class tags with html tags */
+/* div .para{
+    color:yellowgreen;
+} */
+/* parent ul tag and id list child */
+/* ul #list{
+    background-color: violet;
+} */
+
+/* child selector (>) */
+/* div > p{
+    color:red;
+} */
+/* Adjacent selector */
+/* div + p{
+    background-color: aqua;
+} */
+/* General sibling selector */
+/* div ~ p{
+    background-color: yellow;
+} */
+
+
+/* psuedo class - hover over button */
+
+.btn{
+    background-color: orange;
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+/* now use the psuedo class */
+.btn:hover{
+    background-color:orangered;
+    color:white;
+    cursor:pointer;
+}
+
+/* This is the pseudo css on links */
+.link:active{
+    color:orangered;
+}
+
+/* psuedo element */
+p::first-line{
+    color: blue;
+}
+p::first-letter{
+    background-color: gray;
+}
+
+

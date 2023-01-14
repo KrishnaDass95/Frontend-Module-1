@@ -1,0 +1,35 @@
+.container{
+    background-color: lightblue;
+    height: 400px;
+    /* initialising flexbox or flex? */
+    display:flex;
+    /* flex direction can be row, column, reverse-row, etc */
+    flex-direction: row;
+    /* flex wrap - helps you specify and control the the amount of 
+    content in a line, you can move items to the next line  */
+    flex-wrap:wrap;
+    /* you have wrap reverse, wrap and no wrap as some values */
+    /* flex flow - it is a short hand and combination of direction and wrap */
+    flex-flow: row nowrap;
+    /* Justify content is important. Justify means x axis
+    it helps you align elements wrt to x-axis */
+    justify-content: flex-end; 
+    /* properties - justify-content: center space-between space-evenly flex-start flex-end ; */
+    /* align items is for y axis alignment, default value is stretch */
+    align-items: center;
+    /* align-items: flex-end, stretch, flex-end, center; */
+    /* align content is same as align items, except, it is when you
+    have wrapped elements and a lot inside the div containter */
+    /* gap - gap property between elements */
+
+
+
+}
+
+.container .item{
+    width: 100px;
+    color:white;
+    background-color: blue;
+    margin: 40px 10px;
+    width: 15%;
+}

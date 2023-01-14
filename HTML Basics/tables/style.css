@@ -1,0 +1,21 @@
+table, tr, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-style: groove;
+    border-color: yellow;
+    padding:10px;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+
+th{
+    background-color: aquamarine;
+    color:red;
+}
+/* giving even rows a gray colour */
+tr:nth-child(even)
+{
+    background-color: lightgray;
+}

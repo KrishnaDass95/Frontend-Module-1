@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <!-- The link below is a CDN -> content delivery network -->
+    <!-- you are using google api's, and other companies who have their own fonts created on their CSS -->
+    <!-- it's using their library in your website, their library is -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>HTML forms</h1>
+    <!-- action says where the data goes -->
+    <!-- method, when the form is filled. REST API, like post this form to a DB -->
+    <form action="" method="post">
+        <!-- We are creating multiple divs as elements like label and input are inline elements -->
+        <div>
+            <!-- input tag has a type for email, handy for checking email issues -->
+            <div class="title">
+                <label for="email">Email Address</label>
+            </div>
+            <!-- you can have a placeholder in the input, default value in that field -->
+            <!-- have a name attribute for backend purpose, data stored in backend-->
+            <!-- value attribute gives in an initial value for that field -->
+            <!-- read only attribute is self explanatory, you cannot overwrite it -->
+            <input class="form-control" type="email" name="email" value="krishdass@gmail.com">
+        </div>
+        <br>
+        <div>
+            <div class="title">
+                <label for="phone" class="title">Phone Number</label> <br>
+            </div>
+            <!-- you can have telephone numbers -->
+            <!-- for form validations, in the input class="form-control" field, you need to know regex using patterns -->
+            <input class="form-control" type="tel" name="mob" pattern="[0-9]" maxlength="10">
+        </div>
+        <br>
+        <div>
+            <!-- labels are imp while creating forms in HTML -->
+            <div class="title">
+                <label for="fname">Full name</label> <br>
+            </div>
+            <!-- required attribute is good -->
+            <input class="form-control" type="text" name="fname" placeholder="First Name" required>
+            <input class="form-control" type="text" name="lname" placeholder="Last Name">
+        </div>
+        <br>
+        <div>
+            <!-- text can take numbers, characters and alphabets -->
+            <!-- size specifies the width of the input class="form-control" box -->
+            <div class="title">
+                <label for="address">Address</label><br>
+            </div>
+            <input class="form-control" type="text" name="street" placeholder="Street Address" size="20"> <br>
+            <input class="form-control" type="text" name="address" placeholder="Office. Suite. Apt">
+        </div>
+        <br>
+        <div>
+            <div class="title">
+                <label for="city">City</label>
+            </div>
+            <input class="form-control" type="text" name="city">
+            <!-- for drop-down lists, you use select tag and then options tag for options in the list -->
+            <select class="drop-down" name="state" id="state">
+                <option value="Delhi">Delhi</option>
+                <option value="Delhi">Chennai</option>
+                <option value="Calcutta">Calcutta</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+            <input class="form-control left" type="number" placeholder="zipcode">
+        </div>
+        <br>
+        <div>
+            <div class="title">
+                <label for="radio-tech">What technologies are you using?</label> <br>
+            </div>
+            <!-- checkbox input class="form-control" , can check multiple options-->
+            <input class="form-control" type="checkbox" name="net-2" value="2G"> 2G
+            <input class="form-control" type="checkbox" name="net-3" value="3G"> 3G
+            <input class="form-control" type="checkbox" name="net-4" value="4G"> 4G
+            <input class="form-control" type="checkbox" name="net-5" value="5G"> 5G
+        </div>
+        <br>
+        <div>
+            <div class="title">
+                <label for="data-use">How much data do you use monthly</label> <br>
+            </div>
+            <!-- name value needs to be same in radio buttons -->
+            <input class="form-control" type="radio" name="net"> 0-50MB
+            <input class="form-control" type="radio" name="net"> 100-500MB
+            <input class="form-control" type="radio" name="net"> 500-800MB
+        </div>
+        <br>
+        <div class="title">
+            <label for="subscription">Subscription Duration</label><br>
+        </div>
+        <!-- all the input class="form-control" types below -->
+        <!-- for date and time, month, week input class="form-control"s in forms, colours, upload file, image -->
+        <div>
+            <!-- min date should be today -->
+        <input class="form-control" type="date" min="2023-01-12" name="date">
+        <input class="form-control" type="month" name="month">
+        <div class="title"> 
+            <label for="to">To</label>
+        </div>
+        <input class="form-control" type="date" name="date">
+        <input class="form-control" type="month" name="month">
+        </div>
+        <br>
+        <!-- submitting and resetting a form -->
+        <div>
+            <input class="btn" type="submit" value="Submit">
+            <input class="btn" type="reset" value="Reset form">
+        </div>
+
+    </form> 
+    
+
+    
+</body>
+</html>

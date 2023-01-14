@@ -1,0 +1,37 @@
+/* Universal selector */
+*{
+    color:brown;
+    margin: 50px;
+    background-color: aliceblue;
+}
+/* Class Selector */
+.hello{
+    color:green;
+    background-color: grey;
+}
+.para{
+    color: darkgoldenrod;
+    background-color: beige;
+}
+/* Tag selector */
+p{
+    color:blueviolet;
+}
+/* ID selector */
+#heading{
+    color:darkblue;
+}
+/* grouping all the selectors using ,  */
+.para, #heading, .hello{
+    background-color: cadetblue;
+}
+/* select p tags with class para */
+p.hello{
+    background-color: bisque;
+    
+}
+/* lets try and override the internal css */
+h2{
+    background-color: violet;
+    color:black
+}

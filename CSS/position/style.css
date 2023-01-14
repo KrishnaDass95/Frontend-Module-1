@@ -1,0 +1,40 @@
+.parent{
+    height:200vh;
+    background-color: yellow;
+    padding: 20px;
+    color:black;
+    /* adding position relative because child two will be relative  */
+    /* to its parent */
+    position: relative;
+}
+.child{
+    padding:30px;
+}
+.child-one{
+    background-color: red;
+    /* positioning static does nothing, its default position you make HTML */
+    /* in static you cannot give static values */
+    position:static;
+    /* relative position - offset it to left,right, top, down */
+    position: relative;
+    left:100px;
+    top:0px;
+    
+
+}
+.child-two{
+    background-color: green;
+    /* lets do some absolute positioning, its relative to its parent */
+    /* so we have to specify relative in its parent */
+    position:absolute;
+}
+.child-three{
+    background-color: blue;
+    color:white;
+    /* lets add a fixed position here, it will make the HTML element 
+    always available on viewport */
+    position:fixed;
+    top:0;
+    right:0;
+    /* so as i scroll, the element always stays with me */
+}
