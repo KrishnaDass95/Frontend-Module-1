@@ -1,0 +1,17 @@
+.container{
+    background-color: blue;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-content:start;
+    justify-content: end;
+    border: 5px solid black;
+    height:700px;
+}
+.container-child{
+    border: 3px solid red;
+    padding:50px;
+}
+.child-3{
+    background-color: orange;
+}
