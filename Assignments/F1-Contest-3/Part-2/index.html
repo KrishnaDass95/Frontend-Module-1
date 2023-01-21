@@ -4,22 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input assignment</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Form Assignment</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
+    <form action="#" method="post">
         <div class="left-container">
-            <div class="field">
-                <p>Text Field <span style="color:red">*</span></p>
-                <input type="text" placeholder="Input Text">
+            <div class="form-fields">
+                <div class="title">
+                    <label for="input">Text field</label>
+                </div>
+                <input type="text" class="form-control" placeholder="Input Text" required>
             </div>
-            <div class="field">
-                <p>Select Field <span></span></p>
+            <div class="form-fields">
+                <div class="title">
+                    <label for="selection">Select field</label>
+                </div>
+                <select name="dog-breed" id="select-dropdown">
+                    <option value="none" selected disabled hidden>Select</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="golden ret">Golden ret</option>
+                    <option value="german">German Shepherd</option>
+                </select>
+            </div>
+            <div class="form-fields">
+                <div class="title">
+                    <label for="A text area">Text Area</label>
+                </div>
+                <textarea name="big text area" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-fields">
+                <div class="title">
+                    <label for="text-field">Text Field with Add-ons</label>
+                </div>
+                <input type="text" placeholder="Input Text">
+                <span><button>Button</button></span>
             </div>
         </div>
-        <div class="right-container"></div>
+        <div class="right-container">
+            <div class="form-fields"></div>
+            <div class="form-fields"></div>
+            <div class="form-fields"></div>
+            <div class="form-fields"></div>
+        </div>
+    </form>
     </div>
     
 </body>
