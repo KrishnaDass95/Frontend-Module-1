@@ -50,5 +50,6 @@ input[type="checkbox"], input[type="radio"]{
     width:10%;
 }
 .search-field{
-    
+    height:30px;
+    padding-left:25px;   
 }
