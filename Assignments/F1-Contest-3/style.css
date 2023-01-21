@@ -23,9 +23,20 @@ body{
 }
 
 .grid-item-7{
+    position:relative;
     grid-column: 2/-1;
 }
 .grid-item > img{
     height:100%;
     width:100%;
+    z-index: 10;
+}
+span{
+    font-size: 50px;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    z-index: 100;
+    color:wheat;
+    
 }
