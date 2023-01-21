@@ -1,7 +1,28 @@
+body{
+    margin:40px;
+}
 .grid-container{
     border: 1px solid red;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap:38px;
+    grid-auto-rows: minmax(238px, 560px);
+    justify-content: center;
+    height: 100vh;
 }
 .grid-item{
-    border: 1px solid green;
-    grid
+    background-color: #D9D9D9;
+}
+
+.grid-item-1
+{
+    grid-row: span 2;
+}
+
+.grid-item-6{
+    grid-column: 1/1;
+}
+
+.grid-item-7{
+    grid-column: 2/-1;
 }
