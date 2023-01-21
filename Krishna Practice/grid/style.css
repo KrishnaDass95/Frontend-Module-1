@@ -4,21 +4,15 @@
     border-right: none;
     /* grid code */
     display:grid;
-    grid-template-columns: 2fr 2.5fr;
-    gap:2px;
-    grid-auto-rows: minmax(150px, auto);
-    grid-column-gap: 10px;
-    grid-row-gap: 25px;
+    grid-template-columns: 200px 250px;
+    grid-gap:20px;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 100vh;
 
     
 
 }
 .grid-item{
     background-color: green;
-}
-.grid-item-1{
-    grid-column: span 2;
-}
-.grid-item-2{
-    grid-row: span 2;
 }
