@@ -2,11 +2,10 @@ body{
     margin:40px;
 }
 .grid-container{
-    border: 1px solid red;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr 1fr;
     grid-gap:38px;
-    grid-auto-rows: minmax(238px, 560px);
+    grid-auto-rows: minmax(261px, 560px);
     justify-content: center;
     height: 100vh;
 }
@@ -25,4 +24,8 @@ body{
 
 .grid-item-7{
     grid-column: 2/-1;
+}
+.grid-item > img{
+    height:100%;
+    width:100%;
 }
