@@ -4,9 +4,9 @@
     border-right: none;
     /* grid code */
     display:grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 2fr 2.5fr;
     gap:2px;
-    grid-template-rows: 10fr 2fr 5fr;
+    grid-auto-rows: minmax(150px, auto);
 
     
 
