@@ -5,17 +5,22 @@
 }
 .container 
 {
-    border:1px solid red;
+    
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
 .left-container{
-    border: 1px solid green;
+
 
 }
 .right-container{
-    border: 1px solid orchid;
+padding-top: 20px;
+
+
+
+
 }
+
 label{
     font-family: 'Inter', sans-serif;
     font-family: 'Lato', sans-serif;
@@ -36,4 +41,14 @@ input, select, textarea{
 }
 select{
     width:75%;
+}
+.hybrid-field{
+    display:flex;
+    
+}
+input[type="checkbox"], input[type="radio"]{
+    width:10%;
+}
+.search-field{
+    
 }
