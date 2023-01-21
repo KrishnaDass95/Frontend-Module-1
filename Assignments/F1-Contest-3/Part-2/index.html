@@ -1,55 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Assignment</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-    <form action="#" method="post">
-        <div class="left-container">
-            <div class="form-fields">
-                <div class="title">
-                    <label for="input">Text field</label>
-                </div>
-                <input type="text" class="form-control" placeholder="Input Text" required>
-            </div>
-            <div class="form-fields">
-                <div class="title">
-                    <label for="selection">Select field</label>
-                </div>
-                <select name="dog-breed" id="select-dropdown">
-                    <option value="none" selected disabled hidden>Select</option>
-                    <option value="beagle">Beagle</option>
-                    <option value="golden ret">Golden ret</option>
-                    <option value="german">German Shepherd</option>
-                </select>
-            </div>
-            <div class="form-fields">
-                <div class="title">
-                    <label for="A text area">Text Area</label>
-                </div>
-                <textarea name="big text area" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="form-fields">
-                <div class="title">
-                    <label for="text-field">Text Field with Add-ons</label>
-                </div>
-                <input type="text" placeholder="Input Text">
-                <span><button>Button</button></span>
-            </div>
+      <div class="left-container">
+        <div class="form-fields">
+          <div class="title">
+            <label for="input">Text field</label>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Input Text"
+            required
+          />
         </div>
-        <div class="right-container">
-            <div class="form-fields"></div>
-            <div class="form-fields"></div>
-            <div class="form-fields"></div>
-            <div class="form-fields"></div>
+        <div class="form-fields">
+          <div class="title">
+            <label for="selection">Select field</label>
+          </div>
+          <select name="dog-breed" id="select-dropdown">
+            <option value="none" selected disabled hidden>Select</option>
+            <option value="beagle">Beagle</option>
+            <option value="golden ret">Golden Retriever</option>
+            <option value="german">German Shepherd</option>
+          </select>
         </div>
-    </form>
+        <div class="form-fields">
+          <div class="title">
+            <label for="A text area">Text Area</label>
+          </div>
+          <textarea name="big text area" id="" cols="30" rows="10" placeholder="Text Area"></textarea>
+        </div>
+        <div class="form-fields">
+          <div class="title">
+            <label for="text-field">Text Field with Add-ons</label>
+          </div>
+          <div class="hybrid-field">
+            <div class="hybrid-label">Label</div>
+            <div class="hybrid-input-text">
+              <input type="text" placeholder="Input Text" />
+            </div>
+            <div class="hybrid-button">
+              <button>Button</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="form-fields">
+          <input type="text" name="txtBox" />
+        </div>
+        <div class="form-fields"><input type="checkbox" /> Checkbox</div>
+        <div class="form-fields"><input type="radio" /> Radio Button</div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
