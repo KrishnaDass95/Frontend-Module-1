@@ -1,0 +1,20 @@
+.test{
+    height: 100px;
+    width:100px;
+    background-color: red;
+    position:absolute;
+}
+.test-2{
+    background-color: green;
+    left: 40px;
+    top: 30px;
+}
+.test-3{
+    background-color: yellow;
+    left: 80px;
+    top: 60px;
+    z-index:110;
+}
+.test-1{
+    z-index:100;
+}
