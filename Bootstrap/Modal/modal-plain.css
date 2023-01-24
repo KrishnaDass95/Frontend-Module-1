@@ -1,0 +1,46 @@
+.container{
+    background-color: #7F7F7F;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;  
+    /* use opacity to see things behind */
+    opacity: 0.4;  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+} 
+.popup{
+    padding:40px;
+    background-color: white;
+    border-radius: 5px;
+    display:flex;
+    flex-flow: column wrap;
+}
+.popup > input{
+    margin: 5px;
+    color: blue;
+}
+.popup button{
+    border:none;
+    background-color:  ;
+    border-radius: 10px;
+}
+.popup button:hover{
+    background-color: green;
+}
+.outside-button{
+    background-color: yellow;
+}
+.outside-button:hover{
+    background-color: orange;
+}
+/* when the min-width is 800px, you have 800 px real estate available, */
+/* remove the popup container */
+@media (min-width: 800px){
+    .container{
+        display: none;
+    }
+}
