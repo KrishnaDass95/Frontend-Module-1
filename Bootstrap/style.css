@@ -1,3 +1,9 @@
+.test{
+    background-color: gray;
+    border: 2px solid white;
+}
+
+
 .media::after{
     content: 'XS';
     display: block;
