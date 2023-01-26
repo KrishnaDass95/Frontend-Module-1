@@ -14,7 +14,70 @@
         // variables in JS, do not need a type to declare. we use let to define variable
         // all languages have keywords, let is a key word
         let number = 10;
+
+        // set of rules are defined for a progamming lang to figure out what a variable is
+        // 1. variable name should start with _, alphabet, $
+        // 2. Variable name can contain _, alpha, numerics and $
+        // use camel case for variable names or snake cases, but camel case preferred
         
+        // Arithmetic operators - unary, binary and ternary
+        // 1. unary is ++ -- **
+        // 2. binary has 4 types, arithmetic(+, -), comparison(==, !=, ===), logical(&&, ||, !), bitwise operator(&(and), | (or), ^ (xor))
+        
+
+        // let a = 10;
+        // let b = 20;
+        // console.log(a + b, "This is the output", a - b, a * b, a**b, a%b);
+        // console.log("modulo is", a%b)
+        // let c = 10;
+        // let d = 20;
+        
+
+        // in JS everything is a string ('',"", `` -> back ticks are knows as template strings)
+        let str = "abc";
+        console.log(str);
+        // adding two strings is concatenation
+        console.log("abc"+'acb');
+        console.log(`abc`+`kkkk`);
+        
+        // in JS, if you add something with a string it acts as concatenation
+        console.log('able'+100);
+
+        // boolean declarations
+        let x = false;
+        console.log(x+str); // this converts the boolean to a string, prints falseabc
+
+        let ans = true + 10; // true gets evaluated to 1 , false is 0
+        console.log(ans);
+
+        console.log(false+false); // when you have arithmetic between bools, they get converted into 0 and 1
+        // string + bool -> string, bool + number -> number as bool is 0 for false and 1 for true
+
+
+        // comparison operators, its ans is always boolean
+        console.log(2 == 2);
+        console.log('a'=="a");
+        console.log(10 <= 2);
+        // cant compare two different datatypes
+        console.log("10" == 10); // prints true, this doesn't work as other other languages
+        // == is compares for values, doesn't work like other languages
+        console.log("10" == 10)
+        // === operator -> works like the == operator in other languages.
+        // == compares values 
+        // === compares values and datatype
+
+
+
+
+
+
+
+
+
+
+        
+
+
 
 
 
