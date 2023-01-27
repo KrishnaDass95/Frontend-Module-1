@@ -86,3 +86,50 @@ function sum(b)
 sum(100);
 c = 1001;
 sum(100);
+
+// types of functions
+// function declaration : creating a func to reserve memory in space
+// hoisiting is possible in function declaration
+funct_name() // you can call this function even before it's execution.
+function funct_name(){
+    console.log("func declaration");
+}
+funct_name(); // function invocation 
+
+
+// function with arguments
+function printFullName(fname, lname) // parameters
+{
+    return fname + " " + lname;
+}
+let name = printFullName("Krishna","Dass"); // arguments
+console.log(name);
+
+// string interpolation is joining two words
+// two ways
+
+console.log("yolo"+ " "+ "yala");
+console.log(`my name is : ${name}`);
+
+
+// function expression , 
+// hoisting is not possible
+// storing function inside a variable(man this is wild)
+let func = function() { // this function has no name, annonymous functions -> they have no name
+    console.log("func declaration yo");
+}
+func();
+
+// arrow function, came in ES6 -> short hand function
+let printName = () => { // this is also an anonymous function with no name, it's a variable name
+    console.log("name:", "Hammerooogrammoo")
+}
+printName()
+
+let sumTwoNums = (x, y) =>{
+    return x+y;
+}
+
+// single line functions using arrows
+let productTwoNums = (x, y) => x*y;
+console.log(productTwoNums(10, 5));
