@@ -31,42 +31,58 @@
 
 // var, let and const -> they are keywords to define variable
 // hoisting is a JS behaviour that makes you use a function and variables before declaration, it applies for var, let and const
-console.log(a); // undefined -> variable declared but not defined.
-a = 10;
-console.log(a);
-var a = 10;
-console.log(a);
+// console.log(a); // undefined -> variable declared but not defined.
+// a = 10;
+// console.log(a);
+// var a = 10;
+// console.log(a);
 
-// undefined vs not defined -> undef variable is declared but not initialised
-// not defined -> var is not declared and not initialised.
+// // undefined vs not defined -> undef variable is declared but not initialised
+// // not defined -> var is not declared and not initialised.
 
-// what is var? its a keyword, helps you re-declare and re-initialise a variable, var stays in global scope
-var a = 100;
-var a;
-// the above to does not throw an error.
-// only var was used in ES5
+// // what is var? its a keyword, helps you re-declare and re-initialise a variable, var stays in global scope
+// var a = 100;
+// var a;
+// // the above to does not throw an error.
+// // only var was used in ES5
 
-// var's downside is that you can reinitialise the same variable and its value
-// again and again, var is globally scoped.
-
-
-
-// what is let?  -> can re-initialise a variable but not re-declare.
-// let seems to be locally scoped?
-let c = 100;
-c = 2000;
-// let variables are allocated to script / block or local memory. 
-// in script memory space, you cannot access a variable until its initialised a value.
-// const
-//TDZ temporal dead zone: period of time during which let and const declaration cannot be accessed.
-// TDZ below
-let d = 100;
-console.log(d);
-
-// const keyword, you cannot reinitialise and redeclare values
-// its used mainly for values like the value of pi and stuff
-// const is also hoisted, and it'll be same behaviour as let, 
-// they are in temporal dead zone, you cannot use it
-const e = 500;
+// // var's downside is that you can reinitialise the same variable and its value
+// // again and again, var is globally scoped.
 
 
+
+// // what is let?  -> can re-initialise a variable but not re-declare.
+// // let seems to be locally scoped?
+// let c = 100;
+// c = 2000;
+// // let variables are allocated to script / block or local memory. 
+// // in script memory space, you cannot access a variable until its initialised a value.
+// // const
+// //TDZ temporal dead zone: period of time during which let and const declaration cannot be accessed.
+// // TDZ below
+// let d = 100;
+// console.log(d);
+
+// // const keyword, you cannot reinitialise and redeclare values
+// // its used mainly for values like the value of pi and stuff
+// // const is also hoisted, and it'll be same behaviour as let, 
+// // they are in temporal dead zone, you cannot use it
+// const e = 500;
+
+
+// lets do pure and impure functions
+// pure functions
+function add(a, b){
+    console.log(a+b);
+}
+add(10, 5);
+
+// impure function
+let c = 10; // it's an impure function as the function is dependent of values outside the function
+function sum(b)
+{
+    console.log("impure func", c+b);
+}
+sum(100);
+c = 1001;
+sum(100);
