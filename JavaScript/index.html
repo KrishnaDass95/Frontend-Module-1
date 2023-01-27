@@ -62,9 +62,79 @@
         console.log("10" == 10); // prints true, this doesn't work as other other languages
         // == is compares for values, doesn't work like other languages
         console.log("10" == 10)
-        // === operator -> works like the == operator in other languages.
+        // === operator -> works like the == oper``tor in other languages.
         // == compares values 
         // === compares values and datatype
+
+        // Typecasting - converting one DT to another DT
+        // number to boolean -> only number 0 is false, rest is true
+        console.log(Boolean(1));
+        console.log(Boolean(0)); // functions with capital letters are called constructor functions
+
+        // Strings to boolean - only empty string is boolean of false, remaining is true
+        console.log(Boolean('hello'));
+
+        // datatypes list in JS
+        // undefined, number, string, boolean, NaN(not a number), (null is not a datatype, its a pointer)
+
+        // undefined data type, no value given to variable. undefined is a data type of value undefined.
+        let a;
+        console.log(a);
+
+        console.log(NaN == NaN); // prints false
+
+        // To strings: (String())
+        //     Numbers to String
+        console.log(String(2));
+        console.log(String(NaN));
+        console.log(String(undefined));
+        //     Boolean to strings
+        //     undefined to strings
+
+        // check if a number is Not a number, used in developement
+        let y = NaN;
+        let z = String(y);
+        console.log(z=='NaN');
+
+        // finding type of a datatype
+        console.log(typeof(100)); // number
+        console.log(typeof(null)); // object
+        console.log(typeof("hello")); // string
+
+        // convert bool to numbers
+        console.log(Number(true)); // 1
+        console.log(Number(false)); // 0
+
+        // convert string to numbers
+        console.log(Number('able')); // NaN
+        console.log(Number('123')); // 123
+        console.log(Number(undefined)); 
+
+        // logical operators -
+        console.log(true || false);
+        // you can also do data type comparsion
+        let xyz = ('' && 10);
+        console.log(xyz);
+
+        // the and operator is weird, if you have true and something else,
+        // the second part is generally printed
+        console.log(true && 10); // 10
+        console.log(true && 'abc'); // abc
+        console.log(true && undefined); //undefined
+        console.log('' && true);
+
+        
+
+
+
+
+
+
+
+
+
+
+
 
 
 
