@@ -60,9 +60,13 @@ c = 2000;
 // const
 //TDZ temporal dead zone: period of time during which let and const declaration cannot be accessed.
 // TDZ below
-console.log(d);
 let d = 100;
 console.log(d);
 
+// const keyword, you cannot reinitialise and redeclare values
+// its used mainly for values like the value of pi and stuff
+// const is also hoisted, and it'll be same behaviour as let, 
+// they are in temporal dead zone, you cannot use it
+const e = 500;
 
 
