@@ -69,3 +69,14 @@
     display:flex;
     padding-left: 28px;
 }
+
+.nav-right .items li .nav-tem a{
+    color:#3d4152;
+    text-decoration: none;
+    font-size: 16px;
+    display:flex;
+    align-items: center;
+}
+.nav-tem span{
+    padding-left: 11px;
+}
