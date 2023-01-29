@@ -161,6 +161,7 @@
     align-items: center;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
+    font-size: 12px;
 }
 .material-symbols-outlined{
     font-size: 20px !important;
@@ -171,7 +172,7 @@
     color: #fff;
     display: flex;
     height:30px;
-    width: 60px;
+    width: 50px;
     justify-content: space-around;
     align-items: center;
 }
