@@ -216,3 +216,9 @@ footer .container-footer{
     color: #808080;
     margin-bottom: 10px;
 }
+@media (max-width: 500px){
+    .restaurant-list{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
