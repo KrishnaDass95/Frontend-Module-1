@@ -220,5 +220,17 @@ footer .container-footer{
     .restaurant-list{
         display: grid;
         grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 50px;
+    }
+    .content-section .item-bar{
+        display: flex;
+        font-size: 7px;
+    }
+    .list-item{
+        border: none;
+        
     }
 }
